@@ -1,3 +1,9 @@
 export { default as HomePage } from './HomePage';
 export { default as Footer } from './Footer';
 export { default as Main } from './Main';
+export { default as Profile } from './Profile';
+export { default as Biography } from './Biography';
+export { default as Tabs } from './Tabs';
+export { default as Tab } from './Tabs/Tab';
+export { default as Separator } from './Separator';
+export { default as Popups } from './Popups';

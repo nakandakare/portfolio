@@ -6,6 +6,7 @@ const HomePage: NextPage = () => {
   return (
     <HomeScreen>
       <ContainerWithImage>
+          <pre />
           <Main />
           <Footer />
       </ContainerWithImage>

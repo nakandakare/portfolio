@@ -10,8 +10,13 @@ export const ContainerWithImage = styled.div`
   background-size: cover;
   opacity: 0.6;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 
   @media (max-width: 1680px) {
     padding: 3rem 2rem;
