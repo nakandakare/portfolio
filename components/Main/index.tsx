@@ -1,14 +1,22 @@
-import { Biography, Profile, Tabs } from "components";
-import { FunctionComponent } from "react";
-import { Container } from './styles';
+import { Biography, Profile, Tabs, Footer } from "components";
+import { _TabsContext } from "context/TabContext";
+import { FunctionComponent, useContext } from "react";
+import { MainContainer, Container } from './styles';
+import { HOME_TABS } from 'constants/tabsName';
 
 const Main: FunctionComponent = () => {
+    const { selectedTab, selectTab } = useContext(_TabsContext);
+
     return (
-        <Container>
-            <Profile />
-            <Biography />
-            <Tabs />
-        </Container>
+        <MainContainer hide={selectedTab}>
+            <pre />
+            <Container>
+                <Profile />
+                <Biography />
+                <Tabs tabsName={HOME_TABS} selectTab={selectTab} />
+            </Container>
+            <Footer />
+        </MainContainer>
     )
 }
 

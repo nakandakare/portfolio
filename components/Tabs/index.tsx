@@ -1,18 +1,20 @@
-import { FunctionComponent, useState } from "react";
+import { FunctionComponent } from "react";
 import { Container } from "./styles";
-import { Tab, Popups } from "components";
+import { Tab } from "components";
+import { _TabsContext } from "context/TabContext";
 
-const TabsName = ["WORK", "PROJECTS", "LINKS", "CONTACT"];
+type props = {
+  tabsName: string[];
+  selectTab: (val: string) => void;
+  selectedTab?: string;
+};
 
-const Tabs: FunctionComponent = () => {
-  const [selectedTab, selectTab] = useState<string>("");
-
+const Tabs: FunctionComponent<props> = ({ tabsName, selectTab, selectedTab }) => {
   return (
     <Container>
-      {TabsName.map((tab, index) => (
-        <Tab key={index} name={tab} onClick={() => selectTab(tab)} />
+      {tabsName.map((tab, index) => (
+        <Tab key={index} name={tab} onClick={() => selectTab(tab)} selectedTab={selectedTab} />
       ))}
-      <Popups selectedTab={selectedTab} selectTab={selectTab} />
     </Container>
   );
 };

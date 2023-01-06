@@ -1,16 +1,19 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  min-width: 7.5rem;
-  height: 2.75rem;
-  line-height: 2.75rem;
+  min-width: 7rem;
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   border-bottom: 0;
   color: #ffffff;
   border-right: solid 1px #ffffff;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: ${(props: { selected: boolean }) => (props.selected ? 'rgba(255, 255, 255, 0.075)': 'transparent')};
 
   &:hover {
     cursor: pointer;

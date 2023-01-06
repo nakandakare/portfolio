@@ -4,11 +4,12 @@ import { Container } from './styles';
 type Props = {
     name: String;
     onClick: () => void;
+    selectedTab?: string;
 }
 
-const Tab: FunctionComponent<Props> = ({ name, onClick }) => {
+const Tab: FunctionComponent<Props> = ({ name, onClick, selectedTab }) => {
     return (
-        <Container onClick={onClick}>
+        <Container onClick={onClick} selected={selectedTab === name}>
             {name}
         </Container>
     )
