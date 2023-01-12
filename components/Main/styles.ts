@@ -9,7 +9,7 @@ export const MainContainer = styled.div<any>`
   justify-content: space-between;
   align-items: center;
   opacity: ${(props: { hide: string }) => (props.hide ? "0" : "1")};
-  transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+  transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out, opacity 0.2s ease-in-out;
 
   @media (max-width: 1680px) {
     padding: 3rem 2rem;

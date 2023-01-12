@@ -4,7 +4,7 @@ import { Container, Text } from './styles';
 const Footer: FunctionComponent = () => {
     return (
         <Container>
-            <Text>© KEVIN NAKANDAKARE - IMAGES: UNSPLASH</Text>
+            <Text>© KEVIN NAKANDAKARE 2022 - IMAGES: UNSPLASH</Text>
         </Container>
     )
 }

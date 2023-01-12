@@ -10,7 +10,7 @@ const Main: FunctionComponent = () => {
     return (
         <MainContainer hide={selectedTab}>
             <pre />
-            <Container>
+            <Container >
                 <Profile />
                 <Biography />
                 <Tabs tabsName={HOME_TABS} selectTab={selectTab} />

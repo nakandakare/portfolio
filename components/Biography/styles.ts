@@ -8,7 +8,7 @@ export const Container = styled.div`
   padding: 3rem 2rem;
   transition: max-height 0.75s ease, padding 0.75s ease,
     opacity 0.325s ease-in-out;
-  transition-delay: 0.25s;
+  transition-delay: 0.2s;
   max-height: 40rem;
   overflow: hidden;
   border-style: solid;
@@ -46,7 +46,7 @@ export const Title = styled.span`
 export const Subtitle = styled.span`
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  font-size: 0.8rem;
   line-height: 2;
   color: #ffffff;
+  text-align: center;
 `;

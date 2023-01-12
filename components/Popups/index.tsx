@@ -1,6 +1,7 @@
 import { FunctionComponent, ReactNode } from "react";
 import { Container, InnerContainer, Title, PopupContainer } from "./styles";
 import { CloseButton } from "components";
+import { font } from "pages/_app";
 
 type Props = {
   selectedTab: string | {};
@@ -16,10 +17,10 @@ const Popups: FunctionComponent<Props> = ({
   title,
 }) => {
   return (
-    <PopupContainer open={!!selectedTab} onClose={() => selectTab("")} modal>
+    <PopupContainer open={!!selectedTab} onClose={() => selectTab("")} modal >
       <Container>
         <InnerContainer>
-          <Title>{title}</Title>
+          <Title className={font.className}>{title}</Title>
           {children}
           <CloseButton onClick={() => selectTab("")} />
         </InnerContainer>

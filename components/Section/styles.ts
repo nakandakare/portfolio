@@ -1,21 +1,22 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
+  width: fit-content;
+  height: fit-content;;
 `;
 
 export const Title = styled.h2`
   font-weight: 600;
   color: #ffffff;
-  text-transform: uppercase;
 `;
 
 export const Subtitle = styled.div`
-  font-weight: 600;
-  padding: 0.5rem 1rem;
+  font-weight: 400;
+  padding: 0.25rem 1rem 0.8rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #93a6af;
 
   @media (max-width: 480px) {
     width: 20rem;
@@ -35,15 +36,28 @@ export const SubtitleRight = styled.h3`
 export const Description = styled.div`
   height: fit-content;
   padding: 0 1rem 2rem 1rem;
+  line-height: 1.4;
+  font-size: 1.2rem;
 
   @media (max-width: 480px) {
     padding: 0 0 2rem 0;
   }
 `;
 
+export const ImageLabel = styled.img`
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  filter: invert(100%);
+  left: 50%;
+  top: 50%;
+`;
+
 export const ImageContainer = styled.div`
-  height: 20rem;
-  width: 100%;
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+
   padding: ${(props: { title?: string}) => (props.title ? '2rem 1rem' : '0rem 1rem 2rem 1rem')};
   @media (max-width: 480px) {
     padding: 0 0 2rem 0;
@@ -58,6 +72,14 @@ export const Img = styled.img`
   border-radius: 4px;
 
   &: hover {
-    cursor: pointer;
+    ${(props: { hover?: boolean}) => (props.hover ? 'cursor: pointer; opacity: 0.5;' : '')};
   }
+`;
+
+export const Spinner = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding 1rem 0;
 `;

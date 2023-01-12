@@ -14,6 +14,8 @@ const CryptoPay: FunctionComponent<props> = ({ projectName }) => {
       title={project.name}
       description={project.description}
       image={project.image}
+      url={project.url}
+      hover
     />
   );
 };

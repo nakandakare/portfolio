@@ -33,7 +33,7 @@ const ContactPopup: FunctionComponent = () => {
       const { name, email, message } = mailBody;
 
       if (!name || !email || !message) {
-        alert("Please fill empty inputs");
+        return alert("Please fill empty inputs");
       }
 
       await emailjs.send(

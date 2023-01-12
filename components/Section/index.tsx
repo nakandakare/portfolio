@@ -3,42 +3,40 @@ import {
   Container,
   Title,
   Subtitle,
-  SubtitleLeft,
-  SubtitleRight,
   Description,
   ImageContainer,
   Img,
 } from "./styles";
+import { font } from "pages/_app";
 
 type props = {
   description: string;
   title?: string;
-  subtitleLeft?: string;
-  subtitleRight?: string;
+  subtitle?: string;
   image?: string;
+  url?: string;
+  hover?: boolean;
 };
 
 const Section: FunctionComponent<props> = ({
   title,
-  subtitleLeft,
-  subtitleRight,
+  subtitle,
   description,
   image,
+  url,
+  hover,
 }) => {
-  const showSubtitle = subtitleRight || subtitleLeft;
-  console.log(title);
+  const onImgClick = () => {
+    url && window.open(url, "_blank", "noreferrer");
+  };
+
   return (
-    <Container>
+    <Container className={font.className}>
       {title && <Title>{title}</Title>}
-      {showSubtitle && (
-        <Subtitle>
-          <SubtitleLeft>{subtitleLeft}</SubtitleLeft>
-          <SubtitleRight>{subtitleRight}</SubtitleRight>
-        </Subtitle>
-      )}
+      {subtitle && <Subtitle>{subtitle}</Subtitle>}
       {image && (
-        <ImageContainer title={title}>
-          <Img src={image} alt={"Image"} />
+        <ImageContainer title={title} onClick={onImgClick}>
+          <Img src={image} alt={"Image"} hover={hover} />
         </ImageContainer>
       )}
       <Description>{description}</Description>

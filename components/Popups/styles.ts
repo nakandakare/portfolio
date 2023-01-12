@@ -27,21 +27,8 @@ const popupAnimation = keyframes`
 
 export const Container = styled.div`
   animation-name: ${popupAnimation};
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
   overflow-y: auto;
-
-  /*
-  padding: 4rem 2rem;
-
-  @media (max-width: 1680px) {
-    padding: 3rem 2rem;
-  }
-  @media (max-width: 736px) {
-    padding: 2rem 0rem;
-  }
-  @media (max-width: 480px) {
-    padding: 1rem 0rem;
-  }*/
 `;
 
 export const InnerContainer = styled.div`
@@ -52,7 +39,7 @@ export const InnerContainer = styled.div`
   background-color: rgba(27, 31, 34, 0.85);
   border-radius: 4px;
   animation-name: ${popupAnimation};
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
 
   @media (max-width: 1680px) {
     width: 40rem;

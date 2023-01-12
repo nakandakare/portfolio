@@ -29,6 +29,7 @@ export const MyLinkedin = styled.a`
     padding: 0.875rem;
     border: solid 1px #ffffff;
     border-radius: 4px;
+    text-decoration: none;
 
     &:hover {
         cursor: pointer;
@@ -36,16 +37,19 @@ export const MyLinkedin = styled.a`
 `;
 
 export const Logo = styled.div`
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEhVDHtC_MPbet9Iirxz2e9SCktSRH06CVew&usqp=CAU");
+  background-image: url("https://portfolio-bucket-kn.s3.amazonaws.com/linkedin.png");
   background-size: cover;
   width: 2.25rem;
   height: 2.25rem;
   border: solid 1px #ffffff;
   border-radius: 100%;
   margin-right: 1.5rem;
+  background-color: white;
 `;
 
 export const Label = styled.div`
     color: white;
     font-size: 1.25rem;
+    letter-spacing: 0.1rem;
+    outline: 0;
 `;
