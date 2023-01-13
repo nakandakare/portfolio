@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HomeScreen = styled.div`
-  background-color: black;
+  background-color: transparent;
 `;
 
 export const ContainerWithImage = styled.div`

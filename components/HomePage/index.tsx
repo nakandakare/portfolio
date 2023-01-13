@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { HomeScreen, ContainerWithImage, Spinner } from "./styles";
+import { HomeScreen, Spinner } from "./styles";
 import { About, Contact, Main, Popups, Projects, Work } from "components";
 import { TABS_NAME } from "constants/tabsName";
 import { useContext, useEffect, useState } from "react";
@@ -46,7 +46,7 @@ const HomePage: NextPage = () => {
 
   return (
     <HomeScreen>
-      <ContainerWithImage>
+      <>
         {imgsLoaded ? (
           <Main />
         ) : (
@@ -54,7 +54,7 @@ const HomePage: NextPage = () => {
             <ClipLoader loading={true} size={100} color={"white"} />
           </Spinner>
         )}
-      </ContainerWithImage>
+      </>
       <Popups
         selectedTab={selectedTab}
         selectTab={selectTab}

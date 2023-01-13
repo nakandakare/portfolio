@@ -26,8 +26,6 @@ const popupAnimation = keyframes`
 `;
 
 export const Container = styled.div`
-  animation-name: ${popupAnimation};
-  animation-duration: 0.3s;
   overflow-y: auto;
   margin: 1.5rem 0;
 `;

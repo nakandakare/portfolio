@@ -15,3 +15,4 @@ export { default as About } from './Popups/About';
 export { default as Contact } from './Popups/Contact';
 export { default as Section } from './Section';
 export { default as Input } from './Input';
+export { default as Particle } from './Particle';
