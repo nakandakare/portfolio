@@ -41,7 +41,6 @@ export const Description = styled.div`
 
   @media (max-width: 480px) {
     padding: 0 0 2rem 0;
-    font-size: 0.875rem;
   }
 `;
 
@@ -97,4 +96,7 @@ font-size: 1rem;
 
 export const ListItem = styled.li`
   padding-bottom: 0.5rem;
+  @media (max-width: 480px) {
+    font-size: 0.875rem;
+  }
 `;
