@@ -41,6 +41,7 @@ export const Description = styled.div`
 
   @media (max-width: 480px) {
     padding: 0 0 2rem 0;
+    font-size: 0.875rem;
   }
 `;
 
@@ -57,10 +58,9 @@ export const ImageContainer = styled.div`
   position: relative;
   height: fit-content;
   width: fit-content;
-
   padding: ${(props: { title?: string}) => (props.title ? '2rem 1rem' : '0rem 1rem 2rem 1rem')};
   @media (max-width: 480px) {
-    padding: 0 0 2rem 0;
+    padding: 1rem 0 1rem 0;
   }
 `;
 
