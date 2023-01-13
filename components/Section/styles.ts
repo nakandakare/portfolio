@@ -83,3 +83,18 @@ export const Spinner = styled.div`
   align-items: center;
   padding 1rem 0;
 `;
+
+export const Ordered = styled.ul`
+height: fit-content;
+padding: 0 1rem 2rem 1rem;
+line-height: 1.4;
+font-size: 1rem;
+
+@media (max-width: 480px) {
+  padding: 0 0 2rem 0;
+}
+`;
+
+export const ListItem = styled.li`
+  padding-bottom: 0.5rem;
+`;

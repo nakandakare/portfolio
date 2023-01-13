@@ -6,16 +6,19 @@ import {
   Description,
   ImageContainer,
   Img,
+  Ordered,
+  ListItem,
 } from "./styles";
 import { font } from "pages/_app";
 
 type props = {
-  description: string;
+  description?: string;
   title?: string;
   subtitle?: string;
   image?: string;
   url?: string;
   hover?: boolean;
+  ordered?: string[];
 };
 
 const Section: FunctionComponent<props> = ({
@@ -25,6 +28,7 @@ const Section: FunctionComponent<props> = ({
   image,
   url,
   hover,
+  ordered,
 }) => {
   const onImgClick = () => {
     url && window.open(url, "_blank", "noreferrer");
@@ -39,7 +43,15 @@ const Section: FunctionComponent<props> = ({
           <Img src={image} alt={"Image"} hover={hover} />
         </ImageContainer>
       )}
-      <Description>{description}</Description>
+      {ordered ? (
+        <Ordered>
+          {ordered.map((item: string, i: number) => (
+            <ListItem key={i}>{item}</ListItem>
+          ))}
+        </Ordered>
+      ) : (
+        <Description>{description}</Description>
+      )}
     </Container>
   );
 };

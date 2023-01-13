@@ -5,7 +5,12 @@ import { Container } from "./styles";
 const AboutPopup: FunctionComponent = () => {
   return (
     <Container>
-      <Section image={"https://portfolio-bucket-kn.s3.amazonaws.com/about.png"} description={"Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet."}/>
+      <Section
+        image={"https://portfolio-bucket-kn.s3.amazonaws.com/about.png"}
+        description={
+          "My name is Kevin Nakandakare. I’m a Software Engineer based in Buenos Aires, Argentina. I describe myself as a passionate developer who loves coding and creating creative solutions. Aside from my job, I like to learn the latest technologies like cloud computing, blockchain, and IoT. As an interesting fact, I was born in Japan, and I’ve lived in Japan, Brasil, and Argentina. In my free time you can find me at the gym, playing video games or at tech meetups."
+        }
+      />
     </Container>
   );
 };

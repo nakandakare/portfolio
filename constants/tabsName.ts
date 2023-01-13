@@ -20,13 +20,13 @@ interface IProjectKeys {
 export const PROJECTS_DETAILS: IProjectKeys = {
   "Crypto Pay": {
     name: "Crypto Pay",
-    description: "Test",
+    description: "Through this application you can send Cryptocurrencies between Metamask wllets. You can also view the latest transactions. Made with React and Solidity, responsive for mobile and tablet.",
     image: "https://portfolio-bucket-kn.s3.amazonaws.com/crypto-pay.png",
     url: "https://crypto-pay.netlify.app/",
   },
   Hattori: {
     name: "Hattori Clothing",
-    description: "Test",
+    description: "It is an e-commerce web application developed with React, React-redux, Redux-saga, Firebase and Stripe API.",
     image: "https://portfolio-bucket-kn.s3.amazonaws.com/hattori-clothing.png",
     url: "https://hattori-clothing.netlify.app/",
   },

@@ -41,6 +41,9 @@ export const Title = styled.span`
   font-weight: 600;
   line-height: 1.3;
   text-transform: uppercase;
+  @media (max-width: 736px) {
+    font-size: 1.8rem;
+  }
 `;
 
 export const Subtitle = styled.span`
@@ -49,4 +52,7 @@ export const Subtitle = styled.span`
   line-height: 2;
   color: #ffffff;
   text-align: center;
+  @media (max-width: 736px) {
+    font-size: 0.875rem;
+  }
 `;

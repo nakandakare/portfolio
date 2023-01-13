@@ -9,9 +9,10 @@ const Biography: FunctionComponent = () => {
       <Container>
         <Title>Hello, I&apos;m Kevin</Title>
         <Subtitle>
-          A fully responsive site template designed by A fully responsive <br />
-          site template designed by A fully responsive site template designed by A fully responsive <br />
-          site template designed by
+          I started programming in 2018, since then creating system applications
+          became my passion. <br/>I’m eager to learn and ready to expand my knowledge
+          in the technology system.<br/> Get more information about me in the section
+          below.
         </Subtitle>
       </Container>
       <Separator />
