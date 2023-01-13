@@ -1,7 +1,6 @@
 import { FunctionComponent, useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim"; // loads tsparticles-slim
-//import { loadFull } from "tsparticles"; // loads tsparticles
 import { Engine } from "tsparticles-engine";
 import { useWindowSize } from "hook/useWindowSize";
 
@@ -36,10 +35,10 @@ const Particle: FunctionComponent = () => {
       links: {
         color: "#888888",
         enable: true, // enabling this will make particles linked together
-        distance: size.width < 1000 ? 150 : size.width < 500 ? 100  : 200, // maximum distance for linking the particles
+        distance: size.width && (size.width < 1000 ? 150 : size.width < 500 ? 100  : 200), // maximum distance for linking the particles
       },
       number: {
-        limit: size.width < 1000 ? 50 : size.width < 500 ? 20  : 300,
+        limit: size.width && ( size.width < 1000 ? 50 : size.width < 500 ? 20  : 300),
       },
       move: {
         enable: true, // enabling this will make particles move in the canvas
