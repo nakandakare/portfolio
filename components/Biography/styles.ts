@@ -41,6 +41,7 @@ export const Title = styled.span`
   font-weight: 600;
   line-height: 1.3;
   text-transform: uppercase;
+  text-align: center;
   @media (max-width: 736px) {
     font-size: 1.8rem;
   }
