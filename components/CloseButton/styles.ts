@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Image from "next/image";
 
 export const CloseButton = styled.div`
     position: absolute;
@@ -16,7 +15,7 @@ export const CloseButton = styled.div`
     }
 `
 
-export const CloseImg = styled(Image)`
+export const CloseImg = styled.img`
     width: 1.5rem;
     height: 1.5rem;
 `

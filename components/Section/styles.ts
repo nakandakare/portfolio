@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: fit-content;
-  height: fit-content;;
+  height: fit-content; ;
 `;
 
 export const Title = styled.h2`
@@ -57,7 +57,8 @@ export const ImageContainer = styled.div`
   position: relative;
   height: fit-content;
   width: fit-content;
-  padding: ${(props: { title?: string}) => (props.title ? '2rem 1rem' : '0rem 1rem 2rem 1rem')};
+  padding: ${(props: { title?: string }) =>
+    props.title ? "2rem 1rem" : "0rem 1rem 2rem 1rem"};
   @media (max-width: 480px) {
     padding: 1rem 0 1rem 0;
   }
@@ -71,7 +72,8 @@ export const Img = styled.img`
   border-radius: 4px;
 
   &: hover {
-    ${(props: { hover?: boolean}) => (props.hover ? 'cursor: pointer; opacity: 0.5;' : '')};
+    ${(props: { hover?: boolean }) =>
+      props.hover ? "cursor: pointer; opacity: 0.5;" : ""};
   }
 `;
 
@@ -84,14 +86,10 @@ export const Spinner = styled.div`
 `;
 
 export const Ordered = styled.ul`
-height: fit-content;
-padding: 0 1rem 2rem 1rem;
-line-height: 1.4;
-font-size: 1rem;
-
-@media (max-width: 480px) {
-  padding: 0 0 2rem 0;
-}
+  height: fit-content;
+  padding: 0 1rem 2rem 1rem;
+  line-height: 1.4;
+  font-size: 1rem;
 `;
 
 export const ListItem = styled.li`

@@ -30,5 +30,9 @@ export const IMAGES = [
   {
     id: 7,
     url: "https://portfolio-bucket-kn.s3.amazonaws.com/navigation.png"
+  },
+  {
+    id: 7,
+    url: "https://portfolio-bucket-kn.s3.amazonaws.com/close.png"
   }
 ];

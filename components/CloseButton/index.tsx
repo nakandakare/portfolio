@@ -1,6 +1,5 @@
 import { FunctionComponent } from "react";
 import { CloseButton, CloseImg } from './styles';
-import Close from "images/close.png";
 
 type Props = {
   onClick: () => void;
@@ -9,7 +8,7 @@ type Props = {
 const CloseComponent: FunctionComponent<Props> = ({ onClick }) => {
     return (
       <CloseButton onClick={onClick}>
-        <CloseImg src={Close} alt="Close" />
+        <CloseImg src={'https://portfolio-bucket-kn.s3.amazonaws.com/close.png'} alt="Close" />
       </CloseButton>
     )
 }
