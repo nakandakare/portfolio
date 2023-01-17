@@ -23,7 +23,7 @@ const WorkPopup: FunctionComponent = () => {
         subtitle={"August 2020 - September 2021"}
         ordered={[
           "Developed web applications using React + Typescript for multiple clients. (platform, e-commerce)",
-          "Developed a mobile application using React Native for a bank company. This application is similar to a quiz game, where users can learn about finance playing the game. (Link to the App Store)",
+          "Developed a mobile application using React Native for a bank company. This application is similar to a quiz game, where users can learn about finance playing the game.",
           "Responsive application for all types of devices",
           "Use of redux and context API for global state management",
           "Use of container/presentational pattern",
